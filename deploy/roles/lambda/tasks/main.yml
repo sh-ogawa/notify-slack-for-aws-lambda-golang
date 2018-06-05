@@ -6,4 +6,5 @@
     runtime: 'golang'
     role: lambda.role
     handler: lambda.name
+    environment_variables: lambda.env_vars
     timeout: 3
