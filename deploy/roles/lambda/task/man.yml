@@ -1,0 +1,11 @@
+- name: deploy to aws lambda
+# tag入れてないから入れるなら追加する
+  lambda:
+    name: lambda.name
+    state: present 
+    zip_file: lambda.zip_file
+    runtime: 'golang'
+    role: lambda.role
+    handler: lambda.name
+    environment_variables: lambda.env_vars
+    timout: 3

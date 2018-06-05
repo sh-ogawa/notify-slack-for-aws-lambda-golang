@@ -1,0 +1,8 @@
+# production
+lambda:
+  name:notify-slack
+  zip_file: notify-s3-to-slack.zip
+  role: s3_lambda_coop
+  env_vars:
+    slackChannel: test
+    slackToken: test
