@@ -1,0 +1,9 @@
+- name: deploy to aws lambda
+  lambda:
+    name: lambda.name
+    state: present 
+    zip_file: lambda.zip_file
+    runtime: 'golang'
+    role: lambda.role
+    handler: lambda.name
+    timeout: 3

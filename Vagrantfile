@@ -7,7 +7,7 @@
 # you're doing.
 Vagrant.configure("2") do |config|
 
-  config.vm.box = "mvbcoding/awslinux"  
+  config.vm.box = "hbsmith/awslinux"  
   config.vm.synced_folder ".", "/home/vagrant/notfy-slack", owner: "vagrant", group: "vagrant"
   
   config.vm.define :master do |node|
