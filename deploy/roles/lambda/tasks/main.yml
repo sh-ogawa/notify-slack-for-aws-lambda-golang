@@ -3,7 +3,7 @@
     name: "{{ lambda.name }}"
     state: present 
     zip_file: "{{ lambda.zip_file }}"
-    runtime: 'golang'
+    runtime: 'go1.x'
     role: "{{ lambda.role }}"
     handler: "{{ lambda.name }}"
     environment_variables: "{{ lambda.env_vars }}"

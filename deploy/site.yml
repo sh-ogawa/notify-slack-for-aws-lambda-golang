@@ -1,6 +1,5 @@
 - hosts: aws-lambda
   connection: local
-  strategy: debug
   vars_files:
     - vars/{{ stage }}.yml
   roles:
