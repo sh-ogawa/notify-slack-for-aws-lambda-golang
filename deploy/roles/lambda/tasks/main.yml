@@ -1,6 +1,7 @@
 - name: deploy to aws lambda
   lambda:
     name: "{{ lambda.name }}"
+    description: When put object on s3 then slack notify
     state: present 
     zip_file: "{{ lambda.zip_file }}"
     runtime: 'go1.x'
